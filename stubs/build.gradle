@@ -1,6 +1,7 @@
 apply plugin: 'maven-publish'
-apply plugin: 'java'
+apply plugin: 'groovy'
 apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.ofg.uptodate'
 
 buildscript {
     repositories {
@@ -10,12 +11,24 @@ buildscript {
 
     dependencies {
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:+'
+        classpath 'com.ofg:uptodate-gradle-plugin:1.1.0'
     }
 }
 
 group = 'com.ofg'
-description = 'Contains stubs for the examples'
+description = 'Contains examples of stubs'
 version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+dependencies {
+    testCompile 'org.codehaus.groovy:groovy-all:2.3.8'
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+    testCompile 'com.github.tomakehurst:wiremock:1.51'
+}
 
 publishing {
     publications {
@@ -29,4 +42,3 @@ jar {
     from "commitHash.txt"
     from 'repository'
 }
-

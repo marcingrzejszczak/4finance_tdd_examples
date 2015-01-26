@@ -1,9 +1,11 @@
 {
     "pl": {
-        "this": "com/ofg/twitter-places-analyzer",
+        "this": "com/blogspot/toomuchcoding/loanApplicationService",
         "dependencies": {
-            "collerator": {
-                "path": "com/ofg/twitter-places-collerator"
+            "fraud": {
+                "path": "com/blogspot/toomuchcoding/fraudDetectionService",
+                "contentTypeTemplate": "application/vnd.fraudDetectionService.$version+json",
+                "version": "v1"
             }
         }
     }
