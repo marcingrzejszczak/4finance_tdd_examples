@@ -8,7 +8,7 @@
       }
     },
     "bodyPatterns": [
-      {"matches": "^$"}
+      {"matches": "^\\$"}
     ]
   },
   "response": {
