@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "PUT",
+    "url": "/fraudcheck",
+    "headers": {
+      "Content-Type": {
+        "equalTo": "application/vnd.frauddetectionservice.v1+json"
+      }
+    },
+    "bodyPatterns": [
+      {"matches": "\\{\"clientPesel\":\"123456789\"\\,\"loanAmount\":\"999999\"\\}"}
+    ]
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"fraudCheckStatus\":\"FRAUD\",\"rejectionReason\":\"Too high amount\"}",
+    "headers": {
+      "Content-Type": "application/vnd.frauddetectionservice.v1+json"
+    }
+  }
+}
