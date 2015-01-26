@@ -1,0 +1,32 @@
+apply plugin: 'maven-publish'
+apply plugin: 'java'
+apply plugin: 'com.jfrog.bintray'
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:+'
+    }
+}
+
+group = 'com.ofg'
+description = 'Contains stubs for the examples'
+version = '0.0.1-SNAPSHOT'
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+jar {
+    from "commitHash.txt"
+    from 'repository'
+}
+

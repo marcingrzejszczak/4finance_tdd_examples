@@ -1,5 +1,14 @@
-.gradle
+.idea/
+*.iml
 build/
-
-# Ignore Gradle GUI config
-gradle-app.setting
+/bin
+.gradle
+.poject
+.settings
+.classpath
+commitHash.txt
+logs
+.log
+.zip
+/out
+atlassian-ide-plugin.xml
