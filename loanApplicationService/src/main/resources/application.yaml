@@ -9,5 +9,5 @@ metrics.path:
 stubrunner.stubs:
   repository.root: "http://dl.bintray.com/4finance/micro"
   group: com.ofg
-  module: stub-runner-examples
+  module: stubs
 

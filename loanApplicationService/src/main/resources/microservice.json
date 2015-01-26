@@ -4,7 +4,7 @@
         "dependencies": {
             "fraud": {
                 "path": "com/blogspot/toomuchcoding/fraudDetectionService",
-                "contentTypeTemplate": "application/vnd.fraudDetectionService.$version+json",
+                "contentTypeTemplate": "application/vnd.frauddetectionservice.$version+json",
                 "version": "v1"
             }
         }
