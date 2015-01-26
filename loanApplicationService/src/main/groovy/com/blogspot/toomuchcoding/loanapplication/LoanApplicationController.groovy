@@ -1,5 +1,4 @@
 package com.blogspot.toomuchcoding.loanapplication
-
 import com.blogspot.toomuchcoding.config.Versions
 import com.blogspot.toomuchcoding.loanapplication.model.LoanApplication
 import com.blogspot.toomuchcoding.loanapplication.model.LoanApplicationResult
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 import javax.validation.constraints.NotNull
-import java.util.concurrent.Callable
 
 import static org.springframework.web.bind.annotation.RequestMethod.PUT
 

@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "PUT",
+    "url": "/loanApplication",
+    "headers": {
+      "Content-Type": {
+        "equalTo": "application/vnd.loanapplicationservice.v1+json"
+      }
+    },
+    "bodyPatterns": [
+      {"matches": "^$"}
+    ]
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/vnd.loanapplicationservice.v1+json"
+    }
+  }
+}

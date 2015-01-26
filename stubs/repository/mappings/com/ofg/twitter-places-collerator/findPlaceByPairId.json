@@ -1,9 +1,0 @@
-{
-    "request": {
-        "method": "POST",
-        "url": "/1"
-    },
-    "response": {
-        "status": 200
-    }
-}
