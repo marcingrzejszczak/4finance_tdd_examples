@@ -51,9 +51,9 @@ appender(console, ConsoleAppender) {
 
 root(INFO, whereToLog)
 if (System.getProperty(ACTIVE_PROFILES_PROPERTY_NAME) == PRODUCTION) {
-    logger("com.ofg", INFO)
+    logger("com.blogspot", INFO)
 } else {
-    logger("com.ofg", DEBUG)
+    logger("com.blogspot", DEBUG)
 }
 
 
